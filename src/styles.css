@@ -1,0 +1,124 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #003C43 !important;
+}
+
+.strike {
+  position: relative;
+  background-color: #003C43;
+  z-index: 1; /* Ensure strikes appear above squares */
+}
+
+.strike-row-1 {
+  bottom: 304px;
+  width: 357px;
+  height: 8px;
+}
+.strike-row-2 {
+  bottom: 184px;
+  width: 357px;
+  height: 8px;
+}
+.strike-row-3 {
+  bottom: 64px;
+  width: 357px;
+  height: 8px;
+}
+.strike-column-1 {
+  position: absolute;
+  bottom: 120px;
+  transform: translate(-118px);
+  width: 8px;
+  height: 400px;
+  
+}
+.strike-column-2 {
+  position: absolute;
+  bottom: 120px;
+  width: 8px;
+  height: 400px;
+}
+.strike-column-3 {
+  position: absolute;
+  bottom: 120px;
+  transform: translate(118px);
+  width: 8px;
+  height: 400px;
+}
+
+.strike-diagonal-1 {
+  position: relative;
+  width: 357px;
+  height: 10px;
+  bottom: 183px;
+  left: 0px;
+  transform: skewY(45deg); /* Translate and skew */
+}
+
+.strike-diagonal-2 {
+  position: relative;
+  width: 357px;
+  height: 10px;
+  bottom: 182px;
+  left: 0px;
+  transform: skewY(-45deg);
+}
+
+.square {
+  background: #77B0AA;
+  border: 1px solid #003C43;
+  color: #E3FEF7;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 120px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  width: 120px;
+}
+
+
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.btn-custom {
+  background-color: #77B0AA !important; /* Red color */
+  border-color: #77B0AA; /* Red color */
+  color: #ffffff; /* White text */
+  font-size: large !important;
+}
+
+
+.container{
+  color: #E3FEF7 !important;
+  font-family: "Jersey 15", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 40px !important;
+}
+
+.status {
+  padding: 20px;
+  font-size: 30px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+
